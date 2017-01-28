@@ -19,17 +19,14 @@ class ProfileViewController: FormViewController {
                 row.title = "Name"
                 row.placeholder = "Boatey McBoatFace"
             }
+            <<< PhoneRow(){
+                $0.title = "Intere"
+                $0.placeholder = "And numbers here"
+            }
+            +++ Section("Interests")
             <<< DateRow(){
                 $0.title = "Experiences"
                 $0.value = Date(timeIntervalSinceReferenceDate: 0)
-        
-            }
-            +++ Section("Interests")
-            <<< TextRow(){ row in
-                row.title = "Name"
-                row.placeholder = "Boatey McBoatFace"
-        }
-        
         }
         
         

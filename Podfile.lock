@@ -1,12 +1,18 @@
 PODS:
   - Eureka (2.0.0-beta.1)
+  - Koloda (4.0):
+    - pop (~> 1.0)
+  - pop (1.0.9)
 
 DEPENDENCIES:
   - Eureka (~> 2.0.0-beta.1)
+  - Koloda (~> 4.0)
 
 SPEC CHECKSUMS:
   Eureka: d014adf16406745e1a78d5790ea37ed130a0a8e5
+  Koloda: cb171633afc6182a77821b7951e38b2cb272ba7c
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
 
-PODFILE CHECKSUM: 52a96f5b06d38a3c17f874437e9cf80c6f4e7c34
+PODFILE CHECKSUM: 6f3d990e5e66eec36229935a029b768425398292
 
 COCOAPODS: 1.2.0
