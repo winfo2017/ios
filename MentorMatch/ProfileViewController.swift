@@ -8,35 +8,51 @@
 
 import UIKit
 import Eureka
+import Alamofire
+import SwiftyJSON
 
 class ProfileViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        sendValues()
         form = Section("Personal details")
             <<< TextRow(){ row in
                 row.title = "Name"
                 row.placeholder = "Boatey McBoatFace"
             }
-            <<< PhoneRow(){
-                $0.title = "Intere"
-                $0.placeholder = "And numbers here"
+            
+            <<< SegmentedRow<String>(){
+                $0.title = "Gender"
+                $0.options = ["Male", "Female", "Other"]
+                }.cellSetup { cell, row in
+                    cell.imageView?.image = UIImage(named: "plus_image")
             }
+            
             +++ Section("Interests")
-            <<< DateRow(){
-                $0.title = "Experiences"
-                $0.value = Date(timeIntervalSinceReferenceDate: 0)
-        }
-        
-        
+            <<< TextRow(){ row in
+                row.title = "Interests"
+                row.placeholder = "What are you interested in?"
+            }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    // Send form values to the backend
+    func sendValues() {
+        
+        let url = "http://173.250.160.196:3000/users/333/"
+        Alamofire.request(url).responseJSON(completionHandler: {response in
+            print(response.response ?? "no response")
+            let json = JSON(data: response.result.value as! Data)
+            
+            if let JSON = response.result.value {
+                print(JSON)
+            }
+        });
+    }
 }
 

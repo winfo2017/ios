@@ -6,6 +6,8 @@ target 'MentorMatch' do
   use_frameworks!
   pod 'Eureka', '~> 2.0.0-beta.1'
   pod 'Koloda', '~> 4.0'
+  pod 'Alamofire', '~> 4.3'
+  pod 'SwiftyJSON'
   # Pods for MentorMatch
 
 end
