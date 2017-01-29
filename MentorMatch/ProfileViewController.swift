@@ -13,6 +13,7 @@ class ProfileViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        MainViewController()
         
         form = Section("Personal details")
             <<< TextRow(){ row in

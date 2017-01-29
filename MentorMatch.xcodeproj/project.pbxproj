@@ -14,6 +14,7 @@
 		74A0A0D41E3D34F500E4D4FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A0A0D21E3D34F500E4D4FC /* Main.storyboard */; };
 		74A0A0D61E3D34F500E4D4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A0A0D51E3D34F500E4D4FC /* Assets.xcassets */; };
 		74A0A0D91E3D34F500E4D4FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A0A0D71E3D34F500E4D4FC /* LaunchScreen.storyboard */; };
+		74A0A0E31E3D721700E4D4FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0A0E21E3D721700E4D4FC /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		74A0A0D51E3D34F500E4D4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74A0A0D81E3D34F500E4D4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74A0A0DA1E3D34F500E4D4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74A0A0E21E3D721700E4D4FC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9D96FFB827BFC15B245B0DD4 /* Pods_MentorMatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MentorMatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2516EC5F8B510CA7012E535 /* Pods-MentorMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorMatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-MentorMatch/Pods-MentorMatch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +76,7 @@
 				74A0A0CC1E3D34F500E4D4FC /* AppDelegate.swift */,
 				74A0A0CE1E3D34F500E4D4FC /* SwipeViewController.swift */,
 				74A0A0D01E3D34F500E4D4FC /* ProfileViewController.swift */,
+				74A0A0E21E3D721700E4D4FC /* MainViewController.swift */,
 				74A0A0D21E3D34F500E4D4FC /* Main.storyboard */,
 				74A0A0D51E3D34F500E4D4FC /* Assets.xcassets */,
 				74A0A0D71E3D34F500E4D4FC /* LaunchScreen.storyboard */,
@@ -217,6 +220,7 @@
 				74A0A0D11E3D34F500E4D4FC /* ProfileViewController.swift in Sources */,
 				74A0A0CD1E3D34F500E4D4FC /* AppDelegate.swift in Sources */,
 				74A0A0CF1E3D34F500E4D4FC /* SwipeViewController.swift in Sources */,
+				74A0A0E31E3D721700E4D4FC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
